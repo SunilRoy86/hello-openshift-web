@@ -12,7 +12,7 @@ class MyController
 {
 	 @RequestMapping(value = "/index",method = RequestMethod.GET)
 	public String home(Model model) {
-		System.out.println("controller..");
+		System.out.println("Git Hub connected.....controller..");
 		model.addAttribute("message","I love India...");
 		return "home";
 	}
