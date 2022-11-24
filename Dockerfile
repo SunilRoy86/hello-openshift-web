@@ -1,7 +1,7 @@
 FROM tomcat:8.5.35-jre10
 
 EXPOSE 8080
-RUN yum -y install java
+RUN OC -y install java
 RUN java -version
 
 ADD target/firstjsp.jar /usr/local/tomcat/webapps/
